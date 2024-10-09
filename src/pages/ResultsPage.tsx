@@ -14,7 +14,7 @@ const ResultsPage: React.FC = () => {
     localStorage.removeItem('quizProgress'); // Удаляем сохраненные данные
     localStorage.removeItem('quizTimeLeft'); // Удаляем сохраненные данные из localStorage
 
-    navigate('/test'); // Переходим на страницу теста
+    navigate('/'); // Переходим на страницу теста
   };
 
   return (

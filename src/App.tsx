@@ -1,14 +1,14 @@
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import TestPage from './pages/TestPage';
 import ResultsPage from './pages/ResultsPage';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router >
       <Routes>
-        <Route path="/test" element={<TestPage />} />
+        <Route path="/" element={<TestPage />} />
         <Route path="/results" element={<ResultsPage />} />
       </Routes>
     </Router>
